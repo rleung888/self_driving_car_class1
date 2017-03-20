@@ -26,11 +26,11 @@ The goals / steps of this project are the following:
 ###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
-	1) Gray Scale the original image, covert the image to gray scale and get it ready for Canny process.
-	2) Gaussian Blue the gray scale image to reduce the noise of the trees and the signs on both side of the road.
-	3) Define the area of interest, I use (450, 325) and (490, 325) for the area.  I intend to keep the y axial lower.
-	4) Use the Hough Transform to draw the lines.   Increase the threshold to 40 votes to reduce the multiple line.   Reduce the min_line_len to 20 pixel and Increase the max_line_gap to 60.  The gap between the line segment is big.  Need to increase the gap limit.
-	5) Merge the lines image and the orginal image together.
+1) Gray Scale the original image, covert the image to gray scale and get it ready for Canny process.
+2) Gaussian Blue the gray scale image to reduce the noise of the trees and the signs on both side of the road.
+3) Define the area of interest, I use (450, 325) and (490, 325) for the area.  I intend to keep the y axial lower.
+4) Use the Hough Transform to draw the lines.   Increase the threshold to 40 votes to reduce the multiple line.   Reduce the min_line_len to 20 pixel and Increase the max_line_gap to 60.  The gap between the line segment is big.  Need to increase the gap limit.
+5) Merge the lines image and the orginal image together.
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by extending the y1 or y2 to the bottom of the image.   It is about 538.
 	(y2 - y1) / (x2 - x1) = (y3 - y1) / (x3 - x1)
