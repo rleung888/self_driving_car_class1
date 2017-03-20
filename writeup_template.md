@@ -42,12 +42,12 @@ However, there are two cases, the left side and right side, we need to use a con
 
 Here are the output images to show how the pipeline works, here is how to include an image: 
 
-![alt text][image1]: ./test_images_output/solidYellowLeft.jpg "Solid Yellow Left"
-![alt text][image1]: ./test_images_output/solidYellowCurve.jpg "Solid Yellow Curve"
-![alt text][image1]: ./test_images_output/solidYellowCurve2.jpg "Solid Yellow Curve2"
-![alt text][image1]: ./test_images_output/solidWhiteRight.jpg "Solid White Right"
-![alt text][image1]: ./test_images_output/solidWhiteCurve.jpg "Solid White Curve"
-![alt text][image1]: ./test_images_output/whiteCarLaneSwitch.jpg "White Car Lane Switch"
+[image1]: ./test_images_output/solidYellowLeft.jpg "Solid Yellow Left"
+[image1]: ./test_images_output/solidYellowCurve.jpg "Solid Yellow Curve"
+[image1]: ./test_images_output/solidYellowCurve2.jpg "Solid Yellow Curve2"
+[image1]: ./test_images_output/solidWhiteRight.jpg "Solid White Right"
+[image1]: ./test_images_output/solidWhiteCurve.jpg "Solid White Curve"
+[image1]: ./test_images_output/whiteCarLaneSwitch.jpg "White Car Lane Switch"
 
 ###2. Identify potential shortcomings with your current pipeline
 
