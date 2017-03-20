@@ -32,10 +32,13 @@ My pipeline consisted of 5 steps. First, I converted the images to grayscale, th
 4) Use the Hough Transform to draw the lines.   Increase the threshold to 40 votes to reduce the multiple line.   Reduce the min_line_len to 20 pixel and Increase the max_line_gap to 60.  The gap between the line segment is big.  Need to increase the gap limit.
 5) Merge the lines image and the orginal image together.
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by extending the y1 or y2 to the bottom of the image.   It is about 538.
-	(y2 - y1) / (x2 - x1) = (y3 - y1) / (x3 - x1)
-	if y3 is at the bottome of the image, it will be 538, so we calculate what x3 is and plug in back to the fomula.
-	However, there are two cases, the left side and right side, we need to use a conditional statement to distinguish them.
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by extending the y1 or y2 to the bottom of the image.   It is about 538:
+
+`(y2 - y1) / (x2 - x1) = (y3 - y1) / (x3 - x1)`
+
+if y3 is at the bottome of the image, it will be 538, so we calculate what x3 is and plug in back to the fomula.
+	
+However, there are two cases, the left side and right side, we need to use a conditional statement to distinguish them.
 
 Here are the output images to show how the pipeline works, here is how to include an image: 
 
