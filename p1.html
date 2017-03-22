@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>p1-Copy1</title><script src="https://unpkg.com/jupyter-js-widgets@2.0.*/dist/embed.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>p1</title><script src="https://unpkg.com/jupyter-js-widgets@2.0.*/dist/embed.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11836,7 +11836,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#importing some useful packages</span>
@@ -11863,13 +11863,13 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#reading in an image</span>
-<span class="c1">#image = mpimg.imread(&#39;test_images/solidWhiteRight.jpg&#39;)</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">mpimg</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;test_images/solidWhiteRight.jpg&#39;</span><span class="p">)</span>
 
-<span class="n">printing</span> <span class="n">out</span> <span class="n">some</span> <span class="n">stats</span> <span class="ow">and</span> <span class="n">plotting</span>
+<span class="c1">#printing out some stats and plotting</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This image is:&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">image</span><span class="p">),</span> <span class="s1">&#39;with dimensions:&#39;</span><span class="p">,</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>  <span class="c1"># if you wanted to show a single color channel image called &#39;gray&#39;, for example, call as plt.imshow(gray, cmap=&#39;gray&#39;)</span>
 </pre></div>
@@ -11892,12 +11892,12 @@ div#notebook {
 </div>
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[7]:</div>
+<div class="prompt output_prompt">Out[4]:</div>
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.image.AxesImage at 0x11df5f710&gt;</pre>
+<pre>&lt;matplotlib.image.AxesImage at 0x120cb9780&gt;</pre>
 </div>
 
 </div>
@@ -13504,7 +13504,7 @@ EP1W22pbbavdw9v/B48rs7cxFkAbAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[87]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
@@ -13657,7 +13657,7 @@ EP1W22pbbavdw9v/B48rs7cxFkAbAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -13673,7 +13673,7 @@ EP1W22pbbavdw9v/B48rs7cxFkAbAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[4]:</div>
+<div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13724,7 +13724,7 @@ EP1W22pbbavdw9v/B48rs7cxFkAbAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[104]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Build your pipeline that will draw lane lines on the test_images</span>
@@ -13734,7 +13734,7 @@ EP1W22pbbavdw9v/B48rs7cxFkAbAAAAAElFTkSuQmCC
     <span class="n">test_image_file_path</span> <span class="o">=</span> <span class="s1">&#39;test_images/&#39;</span> <span class="o">+</span> <span class="n">test_image_file</span>
     <span class="c1">#print(test_image_file_path)</span>
     <span class="n">test_image</span> <span class="o">=</span> <span class="n">mpimg</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">test_image_file_path</span><span class="p">)</span>
-    <span class="n">edges</span> <span class="o">=</span> <span class="n">canny</span><span class="p">(</span><span class="n">gaussian_blur</span><span class="p">(</span><span class="n">grayscale</span><span class="p">(</span><span class="n">test_image</span><span class="p">),</span> <span class="mi">5</span><span class="p">),</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">150</span><span class="p">)</span>
+    <span class="n">edges</span> <span class="o">=</span> <span class="n">canny</span><span class="p">(</span><span class="n">gaussian_blur</span><span class="p">(</span><span class="n">grayscale</span><span class="p">(</span><span class="n">test_image</span><span class="p">),</span> <span class="mi">3</span><span class="p">),</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">150</span><span class="p">)</span>
     <span class="c1">#plt.imshow(edges, cmap=&#39;Greys_r&#39;)</span>
     <span class="n">vertices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[(</span><span class="mi">0</span><span class="p">,</span><span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]),(</span><span class="mi">450</span><span class="p">,</span> <span class="mi">325</span><span class="p">),</span> <span class="p">(</span><span class="mi">490</span><span class="p">,</span> <span class="mi">325</span><span class="p">),</span> <span class="p">(</span><span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])]],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
     <span class="n">masked_edges</span> <span class="o">=</span> <span class="n">region_of_interest</span><span class="p">(</span><span class="n">edges</span><span class="p">,</span> <span class="n">vertices</span><span class="p">)</span>
@@ -13742,11 +13742,11 @@ EP1W22pbbavdw9v/B48rs7cxFkAbAAAAAElFTkSuQmCC
     <span class="c1">#get the Hough Transform</span>
     <span class="n">rho</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1"># distance resolution in pixels of the Hough grid</span>
     <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span> <span class="c1"># angular resolution in radians of the Hough grid</span>
-    <span class="n">threshold</span> <span class="o">=</span> <span class="mi">40</span>     <span class="c1"># minimum number of votes (intersections in Hough grid cell)</span>
+    <span class="n">threshold</span> <span class="o">=</span> <span class="mi">30</span>     <span class="c1"># minimum number of votes (intersections in Hough grid cell), changed according the 1st review</span>
     <span class="c1">#reduce multiple lines on a slight curve - solidWhiteCurve,jpg</span>
-    <span class="n">min_line_len</span> <span class="o">=</span> <span class="mi">20</span> <span class="c1">#minimum number of pixels making up a line</span>
+    <span class="n">min_line_len</span> <span class="o">=</span> <span class="mi">100</span> <span class="c1">#minimum number of pixels making up a line, changed according the 1st review</span>
     <span class="c1"># max_line_gap need to increase from 20 to 160 for the middle lane lines for left edge of solidWhiteRight.jpg</span>
-    <span class="n">max_line_gap</span> <span class="o">=</span> <span class="mi">60</span>    <span class="c1"># maximum gap in pixels between connectable line segments</span>
+    <span class="n">max_line_gap</span> <span class="o">=</span> <span class="mi">160</span>    <span class="c1"># maximum gap in pixels between connectable line segments, changed according the 1st review</span>
     <span class="c1"># line_image = np.copy(image)*0 # creating a blank to draw lines on</span>
     <span class="n">line_image</span> <span class="o">=</span> <span class="n">hough_lines</span><span class="p">(</span><span class="n">masked_edges</span><span class="p">,</span> <span class="n">rho</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="n">threshold</span><span class="p">,</span> <span class="n">min_line_len</span><span class="p">,</span> <span class="n">max_line_gap</span><span class="p">)</span>
     <span class="n">line_edges</span> <span class="o">=</span> <span class="n">weighted_img</span><span class="p">(</span><span class="n">line_image</span><span class="p">,</span> <span class="n">test_image</span><span class="p">,</span> <span class="n">α</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">β</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">λ</span><span class="o">=</span><span class="mf">0.</span><span class="p">)</span>
@@ -13781,7 +13781,7 @@ imageio.plugins.ffmpeg.download()</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[114]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import everything needed to edit/save/watch video clips</span>
@@ -13798,14 +13798,14 @@ imageio.plugins.ffmpeg.download()</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[115]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">process_image</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
     <span class="c1"># NOTE: The output you return should be a color image (3 channel) for processing video below</span>
     <span class="c1"># TODO: put your pipeline here,</span>
     <span class="c1"># you should return the final output (image where lines are drawn on lanes)</span>
-    <span class="n">edges</span> <span class="o">=</span> <span class="n">canny</span><span class="p">(</span><span class="n">gaussian_blur</span><span class="p">(</span><span class="n">grayscale</span><span class="p">(</span><span class="n">image</span><span class="p">),</span> <span class="mi">5</span><span class="p">),</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">150</span><span class="p">)</span>
+    <span class="n">edges</span> <span class="o">=</span> <span class="n">canny</span><span class="p">(</span><span class="n">gaussian_blur</span><span class="p">(</span><span class="n">grayscale</span><span class="p">(</span><span class="n">image</span><span class="p">),</span> <span class="mi">3</span><span class="p">),</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">150</span><span class="p">)</span>
     <span class="c1">#plt.imshow(edges, cmap=&#39;Greys_r&#39;)</span>
     <span class="n">vertices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[(</span><span class="mi">0</span><span class="p">,</span><span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]),(</span><span class="mi">450</span><span class="p">,</span> <span class="mi">325</span><span class="p">),</span> <span class="p">(</span><span class="mi">490</span><span class="p">,</span> <span class="mi">325</span><span class="p">),</span> <span class="p">(</span><span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])]],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
     <span class="n">masked_edges</span> <span class="o">=</span> <span class="n">region_of_interest</span><span class="p">(</span><span class="n">edges</span><span class="p">,</span> <span class="n">vertices</span><span class="p">)</span>
@@ -13813,10 +13813,10 @@ imageio.plugins.ffmpeg.download()</code></pre>
     <span class="c1">#get the Hough Transform</span>
     <span class="n">rho</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1"># distance resolution in pixels of the Hough grid</span>
     <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span> <span class="c1"># angular resolution in radians of the Hough grid</span>
-    <span class="n">threshold</span> <span class="o">=</span> <span class="mi">40</span>     <span class="c1"># minimum number of votes (intersections in Hough grid cell)</span>
-    <span class="n">min_line_len</span> <span class="o">=</span> <span class="mi">20</span> <span class="c1">#minimum number of pixels making up a line</span>
+    <span class="n">threshold</span> <span class="o">=</span> <span class="mi">30</span>     <span class="c1"># minimum number of votes (intersections in Hough grid cell), changed according the 1st review</span>
+    <span class="n">min_line_len</span> <span class="o">=</span> <span class="mi">100</span> <span class="c1">#minimum number of pixels making up a line, changed according the 1st review</span>
     <span class="c1"># max_line_gap need to increase from 20 to 160 for the middle lane lines</span>
-    <span class="n">max_line_gap</span> <span class="o">=</span> <span class="mi">60</span>    <span class="c1"># maximum gap in pixels between connectable line segments</span>
+    <span class="n">max_line_gap</span> <span class="o">=</span> <span class="mi">160</span>    <span class="c1"># maximum gap in pixels between connectable line segments, changed according the 1st review</span>
     <span class="c1"># line_image = np.copy(image)*0 # creating a blank to draw lines on</span>
     <span class="n">line_image</span> <span class="o">=</span> <span class="n">hough_lines</span><span class="p">(</span><span class="n">masked_edges</span><span class="p">,</span> <span class="n">rho</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="n">threshold</span><span class="p">,</span> <span class="n">min_line_len</span><span class="p">,</span> <span class="n">max_line_gap</span><span class="p">)</span>
     <span class="n">line_edges</span> <span class="o">=</span> <span class="n">weighted_img</span><span class="p">(</span><span class="n">line_image</span><span class="p">,</span> <span class="n">image</span><span class="p">,</span> <span class="n">α</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">β</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">λ</span><span class="o">=</span><span class="mf">0.</span><span class="p">)</span>
@@ -13840,7 +13840,7 @@ imageio.plugins.ffmpeg.download()</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[118]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">white_output</span> <span class="o">=</span> <span class="s1">&#39;test_videos_output/solidWhiteRight.mp4&#39;</span>
@@ -13871,7 +13871,7 @@ imageio.plugins.ffmpeg.download()</code></pre>
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>100%|█████████▉| 221/222 [00:02&lt;00:00, 77.53it/s]
+<pre>100%|█████████▉| 221/222 [00:02&lt;00:00, 88.45it/s]
 </pre>
 </div>
 </div>
@@ -13883,8 +13883,8 @@ imageio.plugins.ffmpeg.download()</code></pre>
 <pre>[MoviePy] Done.
 [MoviePy] &gt;&gt;&gt;&gt; Video ready: test_videos_output/solidWhiteRight.mp4 
 
-CPU times: user 2.28 s, sys: 959 ms, total: 3.24 s
-Wall time: 3.13 s
+CPU times: user 2.2 s, sys: 628 ms, total: 2.83 s
+Wall time: 2.91 s
 </pre>
 </div>
 </div>
@@ -13905,7 +13905,7 @@ Wall time: 3.13 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[90]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -13924,7 +13924,7 @@ Wall time: 3.13 s
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[90]:</div>
+<div class="prompt output_prompt">Out[12]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -13964,7 +13964,7 @@ Wall time: 3.13 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[119]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">yellow_output</span> <span class="o">=</span> <span class="s1">&#39;test_videos_output/solidYellowLeft.mp4&#39;</span>
@@ -13995,7 +13995,7 @@ Wall time: 3.13 s
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>100%|█████████▉| 681/682 [00:09&lt;00:00, 75.35it/s]
+<pre>100%|█████████▉| 681/682 [00:08&lt;00:00, 83.28it/s]
 </pre>
 </div>
 </div>
@@ -14007,8 +14007,8 @@ Wall time: 3.13 s
 <pre>[MoviePy] Done.
 [MoviePy] &gt;&gt;&gt;&gt; Video ready: test_videos_output/solidYellowLeft.mp4 
 
-CPU times: user 7.5 s, sys: 2.84 s, total: 10.3 s
-Wall time: 9.46 s
+CPU times: user 7.3 s, sys: 1.78 s, total: 9.08 s
+Wall time: 8.56 s
 </pre>
 </div>
 </div>
@@ -14019,7 +14019,7 @@ Wall time: 9.46 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -14030,6 +14030,27 @@ Wall time: 9.46 s
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[14]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<video width="960" height="540" controls>
+  <source src="test_videos_output/solidYellowLeft.mp4">
+</video>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14056,7 +14077,7 @@ Wall time: 9.46 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[120]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">challenge_output</span> <span class="o">=</span> <span class="s1">&#39;test_videos_output/challenge.mp4&#39;</span>
@@ -14087,7 +14108,7 @@ Wall time: 9.46 s
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>100%|██████████| 251/251 [00:07&lt;00:00, 35.19it/s]
+<pre>100%|██████████| 251/251 [00:07&lt;00:00, 31.41it/s]
 </pre>
 </div>
 </div>
@@ -14099,10 +14120,48 @@ Wall time: 9.46 s
 <pre>[MoviePy] Done.
 [MoviePy] &gt;&gt;&gt;&gt; Video ready: test_videos_output/challenge.mp4 
 
-CPU times: user 6.45 s, sys: 1.36 s, total: 7.81 s
-Wall time: 8.51 s
+CPU times: user 7.34 s, sys: 1.19 s, total: 8.54 s
+Wall time: 8.91 s
 </pre>
 </div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&lt;video width=&quot;960&quot; height=&quot;540&quot; controls&gt;</span>
+<span class="s2">  &lt;source src=&quot;</span><span class="si">{0}</span><span class="s2">&quot;&gt;</span>
+<span class="s2">&lt;/video&gt;</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">challenge_output</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[16]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<video width="960" height="540" controls>
+  <source src="test_videos_output/challenge.mp4">
+</video>
+
+</div>
+
 </div>
 
 </div>
@@ -14114,11 +14173,7 @@ Wall time: 8.51 s
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">&lt;video width=&quot;960&quot; height=&quot;540&quot; controls&gt;</span>
-<span class="s2">  &lt;source src=&quot;</span><span class="si">{0}</span><span class="s2">&quot;&gt;</span>
-<span class="s2">&lt;/video&gt;</span>
-<span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">challenge_output</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
 </div>

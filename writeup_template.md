@@ -10,8 +10,8 @@
 **Finding Lane Lines on the Road**
 
 The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road - COMPLETED
-* Reflect on your work in a written report -- COMPELTED
+* Make a pipeline that finds lane lines on the road - COMPLETED, REVIEWED AND MODIFIED BASED ON 1st REVIEW
+* Reflect on your work in a written report -- COMPLETED, REVIEW AND MODIFIED BASED ON 1st REVIEW
 * DID NOT COMPLETE THE OPTIONAL CHALLENGE PROJECT
 
 
@@ -30,6 +30,7 @@ My pipeline consisted of 5 steps. First, I converted the images to grayscale, th
 2) Gaussian Blue the gray scale image to reduce the noise of the trees and the signs on both side of the road.
 3) Define the area of interest, I use (450, 325) and (490, 325) for the area.  I intend to keep the y axial lower.
 4) Use the Hough Transform to draw the lines.   Increase the threshold to 40 votes to reduce the multiple line.   Reduce the min_line_len to 20 pixel and Increase the max_line_gap to 60.  The gap between the line segment is big.  Need to increase the gap limit.
+Note: Based on the 1st review feedback, change the threshold to 30, min length to 100, and max gap to 160 for better result.
 5) Merge the lines image and the orginal image together.
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by extending the y1 or y2 to the bottom of the image.   It is about 538:
